@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page | Darile</title>
+    <link rel="icon" type="image" href="img/logo/logo_fine.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+    
+
+</head>
+<body>
+    <header id="header">
+        <a href=""><img class="logo" src="img/logo/logo_fine.svg" alt="darile - comany's logo"></a>
+        <nav class="navbar">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#aboutMe">About me</a></li>
+            <li><a href="#contact">Contact</a></li> 
+        </nav>
+        <ul class="social">
+            <li><a target="_blank" href="https://www.linkedin.com/in/davide-ciani-b16b881b4/"><img src="img/icon/linkedin.svg" alt="Linkedin icon" style="width: 180%;"></a></li>
+            <li><a target="_blank" href="https://github.com/darile00"><img src="img/icon/github.svg" alt="Github icon" style="width: 180%;"></a></li>
+
+        </ul>
+        
+        
+        <nav class="menu--right" role="navigation">
+            <div class="menuToggle">
+              <input type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul class="menuItem">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <ul class="social">
+                    <li><a target="_blank" href="https://www.linkedin.com/in/davide-ciani-b16b881b4/"><img src="img/icon/linkedin.svg" alt="Linkedin icon"></a></li>
+                    <li><a target="_blank" href="https://github.com/darile00"><img src="img/icon/github.svg" alt="Github icon"></a></li>
+    
+                </ul>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    
+    <section class="content home" >
+        <h3>Hello, I'm</h3>
+        <h1>DAVIDE CIANI</h1>
+        <h4>Junior front-end developer</h4>
+    </section>
+
+    <span class="anchor" id="portfolio"></span>
+    <section class="portfolio">
+        <div class="cards" onclick="openNav()">
+            <img src="img/logo/logo_fine.svg" alt="Avatar" style="width:100%; border-radius: 5px 5px 0 0">
+            <div class="cardsText">
+                <h4><b>LBA</b></h4>
+            </div>
+        </div>
+        
+        <div id="myExample" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    
+            <div class="overlay-content">
+                <div class="example">
+                    <h4>LBA</h4>
+                    <div class="text">
+                        This website was my first experience with HTML and CSS. It was talking about the basketball tournament in Italy. They had information about all the teams, ranking, and the schedule of games.
+                    </div>
+                    <div class="imgExample">
+                        <img src="img/example/LBA/1.png" alt="LBA project | home page">
+                        <img src="img/example/LBA/2.png" alt="LBA project | team page">
+                        <img src="img/example/LBA/3.png" alt="LBA Project | contact form">
+                        <img src="img/example/LBA/4.png" alt="LBA project | ranking">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cards" onclick="openNav1()">
+            <img src="img/logo/logo_fine.svg" alt="Avatar" style="width:100%; border-radius: 5px 5px 0 0">
+            <div class="cardsText">
+                <h4><b>Hotel Pomelia</b></h4>
+                <p></p>
+            </div>
+        </div>
+
+        <div id="myExample1" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        
+            <div class="overlay-content">
+                <div class="example">
+                    <h4>Hotel Pomelia</h4>
+                    <div class="text">
+                        During the programming course, I was tasked with creating a website for an imaginary holiday facility.
+                    </div>
+                    <div class="imgExample pomelia">
+                        <img src="img/example/hotelPomelia/1.png" alt="Hotel Pomelia |homepage">
+                        <img src="img/example/hotelPomelia/2.png" alt="Hotel Pomelia | homepage">
+                    </div>
+
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <span class="anchor" id="aboutMe"></span>
+    <section  class="content me">
+        <h2>About me</h2>
+        <div class="row">
+            <div class="column">
+                <div class="text">
+                    Hi, I’m Davide Ciani a little more than twenty years old, with a passion for programming and computer science in general. The first projects date back to high school; certainly, the languages related to web programming (HTML, CSS and JavaScript) are the ones that have impressed me the most. In fact, I decided to deepen them by following some online courses.
+                </div>
+
+                <h3>Skills</h3>
+                <div class="skills">
+                    <div class="skill">
+                        <img src="img/icon/html5.svg"html logo">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="skill">
+                        <img src="img/icon/css3.svg" alt="css logo">
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="skill">
+                        <img src="img/icon/javascript.svg" alt="JavaScript logo">
+                        <h5>JavaScript</h5>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <img src="img/logo/logo_fine.svg">
+        </div>
+        
+
+    </section>
+
+    
+    <section id="contact" class="content contact">
+        
+        <div>
+            <h2>Contact</h2>
+            Leave a message if you wanna know something about my works or me!
+        </div>
+
+        <div class="form">
+            <form action="" method="post">
+
+                <label>Name</label>
+                <input type="text" id="name" name="name"  required>
+                <label>Email</label>
+                <input type="email" id="mail" name="mail" required>
+                <label>Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        
+    </section>
+
+    <footer>
+        Web page created by Ciani Davide
+    </footer>
+        
+</body> 
+</html>
+
+
