@@ -125,16 +125,19 @@ body{
     color: $secondaryColor;
     overflow: auto;
     width: 30%;
-}
+
+    img{
+      border-radius: 5px 5px 0 0;
+      width:100%;
+    }
+  }
   
-.cards:hover {
+  .cards:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.cardsText{
+  }
+  .cardsText{
     margin: 20px;
-}
-
-
+  }
 }
 
 .me{
@@ -146,6 +149,10 @@ body{
 
   .row{
     display: flex;
+
+    .myAvatar{
+      margin-left: 6vw;
+    }
 
     .text{
       margin: 0;
