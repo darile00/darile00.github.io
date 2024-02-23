@@ -141,6 +141,8 @@ body{
 }
 
 .me{
+  margin: 11vh 0vw;
+
   padding: $pad;
   
   h2{
@@ -191,6 +193,35 @@ body{
     img{
       width: 60vw;
     }
+  }
+}
+
+.education{
+  padding: 4vh 15vw;
+
+  .boxContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+    .box{
+      padding: 2vh 1vw;
+      background-color: $bgColor; 
+      border-radius: 10px; 
+      margin: 1vw;
+
+      h6{
+        margin-bottom: 3vh;
+      }
+    }
+
+    .onlineCourse{
+      flex:auto;
+    }
+    .highSchool{
+      width:25vw;
+    }
+    
   }
 }
 
