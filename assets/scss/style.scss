@@ -142,7 +142,6 @@ body{
 
 .me{
   margin: 11vh 0vw;
-
   padding: $pad;
   
   h2{
@@ -198,31 +197,65 @@ body{
 
 .education{
   padding: 4vh 15vw;
+  margin-bottom: 11vh;
+  h2{
+    margin-bottom: 2vh;
+  }
+}
 
-  .boxContainer{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    
-    .box{
-      padding: 2vh 1vw;
-      background-color: $bgColor; 
-      border-radius: 10px; 
-      margin: 1vw;
+.workingExp{
+  padding: 4vh 15vw;
+  h2{
+    margin-bottom: 2vh;
+  }
+}
 
-      h6{
-        margin-bottom: 3vh;
+.boxContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  .box{
+    padding: 2vh 1vw;
+    background-color: $bgColor; 
+    border-radius: 10px; 
+    margin: 1vw;
+
+    h6{
+      margin-bottom: 3vh;
+    }
+  }
+
+  .onlineCourse{
+    flex:auto;
+  }
+  .highSchool{
+    width:25vw;
+  }
+  .lenguages{
+    ul{
+      margin-top: 3vh;
+      list-style: none;
+      width: 20vw;
+      
+      :first-child{
+        margin-bottom: 1vh;
       }
     }
-
-    .onlineCourse{
-      flex:auto;
-    }
-    .highSchool{
-      width:25vw;
-    }
-    
   }
+  .experience{
+    flex: 1;
+  }
+  .mcd{
+    width:25vw;
+  }
+  .softSkill{
+    flex: 1;
+    h3{
+      margin-bottom: 3vh;
+    }
+  }
+  
 }
 
 .contact{
@@ -282,20 +315,20 @@ input[type=text], input[type=email], textarea {
     resize: none;
     background-color: $bgColor;
     color: $secondaryColor;
-  }
+}
 
-  input[type=text]:active, input[type=email]:active, textarea:active {
+input[type=text]:active, input[type=email]:active, textarea:active {
     border: 1px solid $secondaryColor;
-  }
+}
 
-  input[type=submit] {
+input[type=submit] {
     background-color: $bgColor;
     color: $secondaryColor;
     padding: 12px 20px;
     border: 2px solid $secondaryColor;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
 
 .overlay {   
   height: 100%;
@@ -550,6 +583,29 @@ footer{
       }
     }    
     }
+  }
+
+  .boxContainer{
+    flex-direction: column;
+
+    .box{
+      padding: 2vh 3vw;
+      margin-bottom: 2vh;
+    }
+
+    .highSchool{
+      width: auto;
+    }
+    .lenguages{
+      ul{
+        width: auto;
+      }
+    }
+    
+    .mcd{
+      width:auto;
+    }
+    
   }
 
   .contact{
